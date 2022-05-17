@@ -386,18 +386,48 @@ main {
 
 /* ----------------- PÁGINAS VELAS | DIFUSORES ----------------- */
 .tittleVelas {
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin: 50px 0 0 0;
     font-family: Lustria;
     font-size: x-large;
 }
 
 .tittleDifusores {
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin: 50px 0 0 0;
     font-family: Lustria;
     font-size: x-large;
 }
+
+.conoce { /* git */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(23) normal,
+    blink 800ms steps(23) infinite normal;
+    border-right: 2px solid black;
+}
+
+@keyframes typewriter { /* git */
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink { /* git */
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
 
 .containerLineas {
     display: flex;
@@ -429,7 +459,13 @@ main {
             border-radius: 2%;
             max-width: 100%;
             height: auto;
+            filter: grayscale(100%);
+            transition: filter .5;
         }
+
+            .lineas img:hover {
+                filter: grayscale(0);
+            }
 
             .tituloLinea {
                 position: absolute;
