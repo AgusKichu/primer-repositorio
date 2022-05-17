@@ -251,11 +251,16 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
-    .banner h1 {
+    .h1Banner {
         margin-left: 70px;
         font-size:larger;
         color: rgb(170, 168, 168);
         font-style: oblique;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 5s steps(53) normal,
+        blink 800ms steps(53) infinite normal;
+        border-right: 2px solid black;
     }
 
 /* ---------- MAIN CON TODAS LAS SECCIONES ----------*/
